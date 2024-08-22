@@ -1,11 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Scanner;
+
+public class PayrollWithOvertime {
+
+    static void theHelloMethod(){
+    System.out.println(" \n Hello from theHelloMethod() ! ");
+    }
+
+    // Create a method that gets input.
+    // This is the method's definition.
+    static void aPersonalGreeting(String someName) {
+        System.out.println(" \n Hello " + someName + ", how are you today?");
+    }
+
+    // Create a method that gets two integers and returns their sum.
+    // Create two int parameters
+
+    static int sumTwoInts(int num1, int num2) {
+        int mySum = 0;
+        mySum = num1 + num2;
+
+        return mySum;
+    }
+}
+
+    public static void main(String[] args) {
+
+        System.out.printf("\nWelcome to Methods!\n");
+
+        // Variables (members)
+        String theUserName = "";
+
+        // Create a Scanner object for the user input.
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the user's name.
+        System.out.println("\n Please enter your name: ");
+        theUserName = scanner.nextLine();
+
+        // Call (invoke) our greeting method
+        String someName;
+        aPersonalGreeting(someName: "some literal string");
+
+        theHelloMethod();
+
+        // variable.
+        int aSum = 0;
+
+        // Call our new sum method.
+        aSum = sumTwoInts(3, 4);
+
+        System.out.println(" \n aSum is: " + aSum);
+        System.out.println(" \n SumTwoInts is: " + SumTwoInts);
+
+        System.out.println("\n This is the end of my program");
+
+}
